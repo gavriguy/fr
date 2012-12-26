@@ -45,6 +45,15 @@ $.fn.vAlign = function() {
 
 
 function readyFunction() {
+  //console.log($('#slider').width());
+  $('#slider').bjqs({
+    'width': $('#slider').width(),
+    'animtype': 'slide',
+    'showcontrols': false,  
+    'automatic': false,  
+     'responsive' : true
+  });
+  //console.log($('#slider'));
   $('.answer-text, .answer-image, .friends').vAlign();
 }
 

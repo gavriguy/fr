@@ -28,6 +28,7 @@ body {
     //@include span-columns(12,12);
    @include susy-grid-background;
     .answers {
+      overflow: auto;
       .answer {
         @include span-columns(12,12);
         background: blue;
