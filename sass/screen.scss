@@ -33,6 +33,7 @@ body {
         @include span-columns(12,12);
         background: blue;
         height: 100px;
+        margin-bottom:5px;
         .answer-image {
           @include span-columns(2,12);
           background: green;
@@ -51,6 +52,9 @@ body {
   }
 }
 
+// slider styling
+
+.bjqs-markers li {padding: 10px;}
 
 body {
 	height:100%;

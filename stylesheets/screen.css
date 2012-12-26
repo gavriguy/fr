@@ -138,8 +138,9 @@ body .modal .answers .answer {
   display: inline;
   background: blue;
   height: 100px;
+  margin-bottom: 5px;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 body .modal .answers .answer .answer-image {
   width: 15.25424%;
   float: left;
@@ -147,7 +148,7 @@ body .modal .answers .answer .answer-image {
   display: inline;
   background: green;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 body .modal .answers .answer .answer-text {
   width: 57.62712%;
   float: left;
@@ -155,7 +156,7 @@ body .modal .answers .answer .answer-text {
   display: inline;
   background: yellow;
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body .modal .answers .answer .friends {
   width: 23.72881%;
   float: right;
@@ -165,12 +166,17 @@ body .modal .answers .answer .friends {
   background: yellow;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
+.bjqs-markers li {
+  padding: 10px;
+}
+
+/* line 59, ../sass/screen.scss */
 body {
   height: 100%;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #my-footer {
   background: red;
 }

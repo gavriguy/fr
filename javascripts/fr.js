@@ -46,13 +46,38 @@ $.fn.vAlign = function() {
 
 function readyFunction() {
   //console.log($('#slider').width());
-  $('#slider').bjqs({
+  var slider = $('#slider').bjqs({
     'width': $('#slider').width(),
     'animtype': 'slide',
     'showcontrols': false,  
     'automatic': false,  
-     'responsive' : true
+     'responsive' : true,
+     'automatic': false
   });
+  //
+  
+  $('#slider').hammer({prevent_default:true}).bind('swipe',function(e){
+    console.log(e);
+    
+    switch (e.direction) {
+      case 'right':
+        slider.go('previous');
+        break;
+      case 'left':
+        slider.go('forward');
+        break;
+      case 'up':
+        $('.ans1').scrollTo($('.ans1').scrollTop()+50);
+        break;
+      case 'down':
+        $('.ans1').scrollTo($('.ans1').scrollTop()-50);
+        break;
+
+
+    }
+    
+  });
+
   //console.log($('#slider'));
   $('.answer-text, .answer-image, .friends').vAlign();
 }
