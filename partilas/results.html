@@ -12,24 +12,17 @@
   </div>
   <div id="slider">
     <ul class="bjqs">
-      <li class="answers ans1">
-        <div class="answer"  ng-repeat="i in [1,2,3,4,5]">
+      <li class="answers" ng-repeat="question in answers">
+        <div class="answer"  ng-repeat="answer in question.answers">
           <div class="answer-image">img{{i}}</div>
-          <div class="answer-text">Answer hgf jhsdg fjhdsg fjhsdg fjhsdg fjhdsg fjhsdg fjhdsg fjhsgd jhg dsjhfg dsjhgf sdjhg </div>
+          <div class="answer-text">{{answer.text}}</div>
           <div class="friends">You + 2</div>
         </div>
       </li>
       <li class="answers">
         <div class="answer">
-          <div class="answer-image">img2</div>
-          <div class="answer-text">Answer hgf jhsdg fjhdsg fjhsdg fjhsdg fjhdsg fjhsdg fjhdsg fjhsgd jhg dsjhfg dsjhgf sdjhg </div>
-          <div class="friends">You + 2</div>
-        </div>
-      </li>
-      <li class="answers">
-        <div class="answer">
-          <div class="answer-image">img3</div>
-          <div class="answer-text">Answer hgf jhsdg fjhdsg fjhsdg fjhsdg fjhdsg fjhsdg fjhdsg fjhsgd jhg dsjhfg dsjhgf sdjhg </div>
+          <div class="answer-image">img{{i}}</div>
+          <div class="answer-text">{{answer.text}}</div>
           <div class="friends">You + 2</div>
         </div>
       </li>

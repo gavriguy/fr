@@ -1,0 +1,15 @@
+[
+  {"question": "Who is going to win the world cup series?",
+    "answers": [{"text": "England",
+                 "img":"imgURL",
+                 "friendFbImg":"imgURL",
+                 "totalFriends": 2},
+                  {"text": "Brazil",
+                 "img":"imgURL",
+                 "friendFbImg":"imgURL",
+                 "totalFriends": 2}
+
+                 ]
+
+  }
+]

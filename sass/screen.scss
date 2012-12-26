@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/layout";
 @import "susy";
+@import "friends-results-modal";
 
 @include sticky-footer(54px, "#my-root", "#my-root-footer", "#my-footer");
 
@@ -26,25 +27,21 @@ body {
     @include container;
 
     //@include span-columns(12,12);
-   @include susy-grid-background;
+   //@include susy-grid-background;
     .answers {
       overflow: auto;
       .answer {
         @include span-columns(12,12);
-        background: blue;
         height: 100px;
-        margin-bottom:5px;
+        margin-top:2px;
         .answer-image {
           @include span-columns(2,12);
-          background: green;
         }
         .answer-text {
           @include span-columns(7,12);
-          background: yellow;
         }
         .friends {
           @include span-columns(3 omega,12);
-          background: yellow;
         }
       }
     }

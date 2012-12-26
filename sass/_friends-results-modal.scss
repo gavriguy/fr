@@ -1,0 +1,17 @@
+.fr-header {
+background-color: rgb(238,238,238); 
+
+}
+#slider {
+  // needs latest Compass, add '@import "compass"' to your scss
+background-color: #888;
+
+}
+.answer {
+  // needs latest Compass, add '@import "compass"' to your scss
+background-color: rgb(238,238,238); // Old browsers
+@include filter-gradient(#eeeeee, #cccccc, vertical); // IE6-9
+@include background-image(linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+
+padding:10px
+}

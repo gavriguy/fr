@@ -17,11 +17,20 @@ angular.module('fr', []).
     
   }
 
-  function ResultsCtrl($scope, $location) {
+  function ResultsCtrl($scope, $location, $http) {
     $scope.setRoute = function(route) {
       $location.path(route);
     }
     $scope.$on('$viewContentLoaded', readyFunction);
+    //
+    // see http://docs.angularjs.org/tutorial/step_05
+    $http.get('data/mock.json').success(function(data){
+      $scope.answers = data;
+      console.log(data);
+
+    });
+
+
   }
 
 
@@ -45,7 +54,9 @@ $.fn.vAlign = function() {
 
 
 function readyFunction() {
+  //$('.answer-text, .answer-image, .friends').vAlign();
   //console.log($('#slider').width());
+  
   var slider = $('#slider').bjqs({
     'width': $('#slider').width(),
     'animtype': 'slide',
@@ -79,6 +90,10 @@ function readyFunction() {
   });
 
   //console.log($('#slider'));
-  $('.answer-text, .answer-image, .friends').vAlign();
+  
 }
+
+///
+
+
 
